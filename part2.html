@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="A structured personal webpage with career goals, education, skills, and achievements.">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Automatically set last modified date using CSS content */
+footer p::after {
+    content: attr(data-last-modified);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#personal">Personal Information</a></li>
+                <li><a href="#career">Career Goal</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies & Achievements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="personal">
+            <h2>Personal Information</h2>
+            <p>Name: Your Name</p>
+            <p>Email: your.email@example.com</p>
+            <p>Location: City, Country</p>
+        </section>
+
+        <section id="career">
+            <h2>Career Goal</h2>
+            <p>I aspire to become a software engineer specializing in web and mobile application development.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Degree: Bachelor of Computer Science</p>
+            <p>Relevant Modules: Mathematics, Programming, Web Development</p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience / Placements</h2>
+            <p>Internship: Web Developer at XYZ Company</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Java</li>
+                <li>Database Management</li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies, Interests, and Achievements</h2>
+            <ul>
+                <li>Coding and Open Source Contributions</li>
+                <li>Hackathons and Programming Contests</li>
+                <li>Reading Tech Blogs</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Last Updated: <span id="date-time"></span></p>
+    </footer>
+</body>
+</html>
